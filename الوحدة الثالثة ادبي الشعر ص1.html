@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان الوحدة الثالثة بكالورياادبي  الصفحة الاولى</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي)
+ الوحدة الثالثة  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            poetry has been around for thousands of years. However, we might think of the epic poem as the first instance of poetry, appearing as early as the 20th century B.C. The Epic of Gilgamesh is often cited as one of the earliest works of epic poetry, dating back to the 18th century B.C. Consisting of Sumerian poems, it’s a text that was discovered through many different Babylonian tablet versions during archaeological excavations. A list of the most not able works of epic poetry _ at least in the Western world _ would have to include the Iliad and the Odyssey, both works of Greek mythology that have been attributed to the poet Homer. Throughout history, poetry has appeared in different forms. The sonnet form became best known as an English poetic form through the work of William Shakespeare in the 16th century. Where did the poetic form lead after the sonnet? Elizabethan poetry of the 1500s soon shifted into Restoration Poetry and a marked turn away from the sonnet.   
+
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h3> 1.  Poems are imagrative awarness of . . . . . </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1.  imagination </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2.language </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">3.experience</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4.thyme </span><br>
+            </div></div>
+    
+    
+            <h3> 2. poetry has been known as . . . . .  . </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.facts </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">2.  music of ideas  </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"   >
+                <span class="an">3. social position</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4.work </span><br>
+            </div>
+    
+        </div>
+        <h3> 3.The Epic of Gilgamesh dates back to . . . . . .   . </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.1.18<sup>th</sup> century A.C  </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2.20 <sup>th</sup> A.C </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3.18<sup>th</sup> B.C </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">4. 16<sup>th</sup> B.C </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h3> 4. Epic of Gilgamesh was discovered through Babylonian . . . . .    .   </h3>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1"valid= "valid" >
+        <span class="an">1. tablet versions </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2. books </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">3. statues</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.images </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            Following the reign of Queen Elizabeth I, the English Restoration period, from 1660 to 1689, saw the rise of literary elites, such as John Dryden, perhaps one of the bestknown names of English literary criticism, translation, drama, and poetry. The form of the mock-heroic and the use of poetic form for satire didn’t end with Dryden. Alexander Pope, most famous for his work The Rape of the Lock (1712), carried on Dryden’s tradition of using poetry for comedic ends. Poetry was for centuries a mainstream art, and writers such as Spenser, Milton, Donne, Blake, Wordsworth, Tennyson and Browning created a world of beauty, of images and forms, as enduring as the painting of the Renaissance or the music of the classical age. Their work became part of the English consciousness. The story of English poetry could be seen in terms of a tension between formal mastery and individual expression, a tension in which the Romantic Movement was crucial in focusing attention on the personal vision of the poet 
+
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h3> 5. Sonnet form is known for work of  </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. Shakespeare </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">2.Dryden </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">3.Epic of Gilgamesh </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">4. herotic poetry  </span><br>
+            </div></div>
+    
+    
+            <h3> 6. A group of class of persons enjoying suprior intellectual   means :  </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">1.poets </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"  >
+                <span class="an">2. soldiers </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+                <span class="an">3. elite </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4. teachers  </span><br>
+            </div>
+    
+        </div>
+        <h3> <i>7. Who was the writer of The Rape Of The Lock? </i> </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.Blake </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. Dryden </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">3.Keats </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+            <span class="an">4. Alexander pope </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> <i>8. The period of Europian history at the end of The Middle Ages and the rise of the modern world . </i> </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+        <span class="an">1.Elizabethan reign  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2.Sumerian era </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">3.Renaissance </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.Romantic history  </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الثالثة ادبي الشعر ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

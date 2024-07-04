@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   الوحدة السابعة ادبي النثر ص2 </title>
+    <style>
+        
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 49%;
+            border-top: 1px solid black;
+            
+            float: left;
+           
+        }
+        .d2{
+            width: 50%;
+            border: 1px solid black;
+            float: right;
+        }
+        pre{
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;    
+        
+        }
+        .a{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+
+
+        }
+
+
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+    
+        <script>
+            var wrong = new Audio();
+            wrong . src="wrong.mp3";
+            var correct = new Audio();
+           correct . src ="correct.mp3";
+        </script>
+
+   
+    
+</head>
+<body>
+    <div class="main">
+    <div class="d1"> 
+        
+        <h3><u><i>C-choose the correct answer :</i></u></h3>            <!--السؤال الاول-->
+        <h5> 9. He is . . . . .  from Homs   .  </h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1" >
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. originally</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. original</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()" >
+                <span class="an">3. originate</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4. origin </span><br>
+            </div>
+        </div>
+    
+    
+            <h5> 10. Assest  is a . . . .  .  word . </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. informal</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2. formality </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3.formal</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4.formalize </span><br>
+            </div>
+        </div>
+
+
+        <h5> 11. two members of the team were kidnapped and held in . . . . . .  for 2 months. </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. captivation </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. captivity</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. capture</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4.caption</span><br>
+        </div>
+    </div>
+    
+    
+    <h5> 12. We are hoping for a . . . . .  project . </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1.success </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+        <span class="an">2. successful</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. successfully</span><br>
+    </div>
+    <div class="answer  ">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4.succeed</span><br>
+    </div><br>
+     
+    </div>
+
+                <!--السؤال الاول-->
+        <h5> 13. The company abused its . . . . .  , forcing worker to work overtime without pay.</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. powerful</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. powered</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. power</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. powerfully </span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 14. I have known her for long time . We . . . . . . . together.</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. lose face</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. gave some one pumpkins</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. broke bread </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. follow your heart</span><br>
+            </div>
+        </div>
+           <!--السؤال الاول-->
+        <h5> 15. The engineer has to . . . . .   the jointsbefore leaving the site .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. eat away</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2.take off</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. get on</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">4.check over </span><br>
+            </div>
+        </div>
+
+                   <!--السؤال الاول-->
+        <h5> 16. Don't let them . . . . . your mental peace .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. drive into</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. look up</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. eat away </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4.  come back</span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 17.  He . . . . . his friends every day after school.</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. met</span>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. meeting </span>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. meets</span>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. have met</span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 18. I . . . . .  him yet .    .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. don't</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. hasn't seen</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. saw</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">4. haven't seen</span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 19.  She . . . . . . to the university tomrrow.</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1.go </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. has gone</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3.will go</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. did go</span><br>
+            </div>
+        </div>
+
+                   <!--السؤال الاول-->
+        <h5> 20.  While I was watching TV , the phone . . . . . .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. ring </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. ringing</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. rang</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. ringer</span><br>
+            </div>
+        </div>
+
+                   <!--السؤال الاول-->
+        <h5> 21. he  . . . . .  in 1966 .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. were born </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. born</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. birth</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">4. was born</span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 22.  we . . .. .  all morning tomorrow .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1.were studying </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+                <span class="an">2. will be studying</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. have studied</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. studying</span><br>
+            </div>
+        </div>
+
+                    <!--السؤال الاول-->
+        <h5> 23. He is . . . . . .  working on the project.</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. yesterday</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. ago</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. currently</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. often</span><br>
+            </div>
+        </div>
+
+</div>
+
+
+
+    <div class="d2"> 
+        
+    
+        
+                    <!--السؤال الاول-->
+        <h5> 24.It's not . . . . . .  to smoke here .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">1. allowed </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. allowes</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. allow </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. allowing</span><br>
+            </div></div>
+    
+    
+            <h5> 25.  He . . . . .   the program when I came. </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. weren't installing </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">2. aren't installing</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. wasn't installing</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4. weren't installed </span><br>
+            </div>
+    
+        </div>
+
+
+        <h5> 26. I have . . . . .  to persuade him   . </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. try </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. trying </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">3.tries</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4. tried</span><br>
+        </div> 
+    
+    
+    </div> <hr>
+    
+    
+    <h3> <i><u> Ask about the underlined words :</u></i> </h3>        <!--الجملة الرابعة-->
+   
+   <h5> 27. I'm  <u>washing the car </u> .</h5>
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1.why are you going? </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+        <span class="an">2.what are you doing ? </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. where are you washing the car ?</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()">
+        <span class="an">4. when are you going? </span><br>
+    </div>
+    
+    
+    </div>
+
+               <!--السؤال الاول-->
+    <h5> 28 . My father <u> has found it in the kitchen </u>  .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1.When has your father find it  ? </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. Where does your father find it?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3.Where has your father found it ?</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4. Where has your father find it?</span><br>
+        </div>
+    </div>
+
+                <!--السؤال الاول-->
+    <h5> 29. I came early <u>because I had work to do </u> .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1.Why did you came early? </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">2.Why did you come early?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3.Why have you came early?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. Why have you come early? </span><br>
+        </div>
+    </div>
+
+                <!--السؤال الاول-->
+    <h5> 30. We have lived here <u> for three years.</u></h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">1.How long have you lived here? </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">2. How long have you live here?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. How long are you live here?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. How long are you lived here?</span><br>
+        </div>
+    </div>
+
+               <!--السؤال الاول-->
+    <h5> 31. He goes to the gym<u> three times every week</u>  .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. Does he go to the gym? </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">2. How often does he go to the gym?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. When does he go to the gym?</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. Which gym does he go to?</span><br>
+        </div>
+    </div><hr>
+
+
+
+    <h2><u>--: Choose the wrong answer :</u></h2>            <!--السؤال الاول-->
+    <h5> 32. It <u>has</u><sup>a</sup>been <u> beloning </u><sup>b</sup> to him <u>in</u><sup>c</sup> <u>two</u><sup>d</sup> months  .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. a </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. b</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">3. c</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">4. d</span><br>
+        </div>
+    </div>
+
+              <!--السؤال الاول-->
+    <h5> 33. There <u>are</u><sup>a</sup> many <u> people</u><sup>b</sup> <u>whose</u><sup>c</sup> are <u>illiterate</u><sup>d</sup>  </h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">1. a</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. b</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">3. c</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. d</span><br>
+        </div>
+    </div>
+
+               <!--السؤال الاول-->
+    <h5> 34.  He says that <u> the condition</u><sup>a</sup>  is <u> serious</u><sup>b</sup> and <u> the boy </u><sup>c</sup> could <u> death</u><sup>d</sup>   . </h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1.a </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2.b</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3.c</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4.d</span><br>
+        </div>
+    </div>
+
+                <!--السؤال الاول-->
+    <h5> 35. Princess Diana <u>was</u><sup>a</sup> a very   <u>beautiful</u><sup>b</sup>  <u> women</u><sup>c</sup>  <u>loved</u><sup>d</sup> by all the British  .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. a </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. b</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">3. c</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. d</span><br>
+        </div>
+    </div>
+
+                <!--السؤال الاول-->
+    <h5> 36.  <u>Those</u><sup>a</sup>unusual   <u> woman</u><sup>b</sup>  really <u>wanted</u><sup>c</sup> to <u> change</u><sup>d</sup> the world .</h5>                  <!--الجملة الاولى-->
+    <div class="qa1-box">
+      
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">1. a </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. b</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. c</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. d</span><br>
+        </div>
+    </div>
+
+    
+
+    
+
+
+</div>
+</div>
+
+<div class="a"><a href="الوحدة السابعة ادبي النثر ص1.html">الصفحة الاولى</a></div>
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

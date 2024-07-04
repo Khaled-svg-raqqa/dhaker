@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان الوحدة السابعة ادبي  النثر ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي)
+ الوحدة الثامنة المقالة  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            An essay is a genre of literature. It is an analytic, interpretative, or critical literary composition usually much shorter and less systematic and formal than a dissertation or thesis and usually dealing with its subject from a limited and often personal point of view.
+            Many students who lack a talent for writing have difficulty making and preparing literary essays. However, what these students do not know is that an academic essay is completely different from creative writing, as it is based on specific rules that you can use if you learn and stick to them  .
+            the preparation stage in which the preparation process for the essay is carried out, and is considered the most important stage. In this process, the exact requirement must be understood by reading the question well and searching for any part that may seem ambiguous to you.
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1. Essay is a kind of  . . . . . .    .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. sport </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">2.books</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">3. literature</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4.verbs </span><br>
+            </div></div>
+    
+    
+            <h5> 2. The essay could be . . . . . . .  .  </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+                <span class="an">1. analytic</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2. comedy </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. act</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4.theatre  </span><br>
+            </div>
+    
+        </div>
+        <h5> 3. . . . . .  writing is important to success in university.</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. Historical </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. Fictional</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. Story </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4. Academic </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 4. Academic essay is based on  . . . . . .   rules .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. random  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. undefined </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1"  valid= "valid" onclick="correct.play()">
+        <span class="an">3.    particular </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4. easy </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            From the sixth-century highlands of Najd in the Arabian Peninsula, come the strident cries of a legendary warrior and poet. The black outcast son of an Arab father and an Ethiopian slave mother, 'Antarah ibn Shaddad struggled to win the recognition of his father and tribe. Because of his mother’s background and because of his colour, his father refused to accept him as a son. One day the Abs tribe (which is the tribe of Antarah) was attacked by another tribe called Tayy. When the battle intensified and they were about to lose, Antarah’s father looked at his son and yelled, “fight Antarah fight” but Antarah responded, “the slave doesn’t know how to fight,
+             the slave knows how to milk the cow and to cut the grass.'Antarah captured his severe life in uncompromising poetry that combines flashes of tenderness with blood-curdling violence. His war songs are evidences to his lifelong battle to win the recognition of his people and the hand of 'Ablah, the free-born woman he loved but who was denied him by her family.
+             From Slavery to the Honour Fields
+               
+
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h5> 5. Some one is not accepted by others means :   </h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. yelled</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. intensified</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. yield </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">4. outcast</span><br>
+            </div></div>
+    
+    
+            <h5> 6. Antara's mother was  . . . . . . .     . </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. Arabian </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">2. farmer</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. Turkish</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid"  onclick="correct.play()">
+                <span class="an">4. Ethiopian slave </span><br>
+            </div>
+    
+        </div>
+        <h5> 7. What was Antarah's tribe ?</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer1">
+            <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+            <span class="an">1. Abs </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. Morra </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. Hamadani </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4.  Tayy</span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 8. Antarah earned his freedom after a battle with . . . . . . .     .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. Morra </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">2. Abs</span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+        <span class="an">3.Tayy </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4. Ablah's family </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الثامنة المقالة  ادبي ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

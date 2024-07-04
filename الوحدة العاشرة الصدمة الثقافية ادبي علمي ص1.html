@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان الوحدة العاشرة علمي ادبي  الصدمة الثقافية ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي علمي)
+الوحدة العاشرة الصدمة الثقافية  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            Culture shock is an experience people may have when they move to a foreign country with a new cultural environment, which is different from their own. These unfamiliar surroundings can lead to a feeling of being a little bit lost. 
+            People experiencing culture shock usually move through four stages; they will initially have the honeymoon stage which is characterized by a positive feeling that everything is new and exciting. Then there will be the frustration stage, it may be marked by rejection of the new culture, as well as romanticizing one’s home culture. But then, with some time and perhaps help from locals, people will start the adjustment stage and begin to feel more familiar and comfortable with the new environment. Adaption and acceptance is the final stage which contributes to the successful integration. 
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1. Culture shock happens when you  . . . . .  .  .     .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">1. travel to a new country </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2. move to a new house</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. buy a new car</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4.see an old friend  </span><br>
+            </div></div>
+    
+    
+            <h5> 2. Culture shock is because of . . . . . . .   .  </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. new job</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2. working on PC </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">3. marriage</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+                <span class="an">4.new different life style  </span><br>
+            </div>
+    
+        </div>
+        <h5> 3. . . . ..   is a change in the way that someone behavces or thinks .</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. integration </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+            <span class="an">2. adjustment</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3.homesickness </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. rejection </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 4. . . . . .   means beyond normal limits  .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1.  nature </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. fast</span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1"  valid= "valid" onclick="correct.play()">
+        <span class="an">3. excessive  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4. slow </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            Moving to a country with a very different climate could be a challenge! In Syria we have a Mediterranean weather, with mild, rainy winters. Here in Canada winter is very cold and snowy. Temperature average is between the single digits and the -20s. I was very worried about the cold. But it wasn’t a problem because most buildings here are well heated. Actually this city knows how to stay warm. When the weather gets too chilly, I head to the Underground City – a series of interconnected tunnels beneath Montreal  which run for over 32 kms. The tunnels connect shopping malls, universities, banks and seven metro stations. 
+            Getting used to different culture is difficult. My experience during these six months taught me to avoid quick judgements and try to understand the point of view of the people in another culture. I’m staying in a building with a Quebecois family who are teaching me about Montreal a lot. They told me not to make quick decisions, and not to leave right away even if I wanted to. They were right! People don’t take the time to adapt, so they don’t accept the new culture and just go back.
+
+
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h5> 5. The feeling of distress and disbelief means :  </h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. wake up</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+                <span class="an">2. shock</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3. happy </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. sad</span><br>
+            </div></div>
+    
+    
+            <h5> 6. To move to another country with a different life style is a . . .. . . . . </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid"  onclick="correct.play()">
+                <span class="an">1. challenge</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">2. normal</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3.ordinary </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. easy </span><br>
+            </div>
+    
+        </div>
+        <h5> 7. When you move to another different country you should . . . . . .    its culture .</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. read </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. ignore</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. leave </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4.  understand</span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 8. Getting used to different culture is . . . . ..  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. easy </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+        <span class="an">2. difficult</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. funny </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4. bad </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة العاشرة الصدمة الثقافية ادبي علمي ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

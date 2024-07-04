@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان الوحدة السابعة ادبي  النثر ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي)
+ الوحدة السابعة النثر  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            Prose is a form of language that has no formal metrical structure. It applies a natural flow of speech, and ordinary grammatical structure, rather than rhythmic structure, such as in the case of traditional poetry. Normal everyday speech is spoken in prose, and most people think and write in prose form. Prose is composed of full grammatical sentences, which consist of paragraphs, and ignores aesthetic appeal in favor of clear, direct language.
+            the reason for prose acceptance can be attributed to its loosely-defined structure, which most writers feel comfortable using when expressing or conveying their ideas and thoughts. It is the standard style of writing used for most spoken dialogues, fictional as well as topical and factual writing, and discourses. It is also the common language used in newspapers, magazines, literature, encyclopedias, broadcasting, philosophy, law, history, the sciences, and many other forms of communication. 
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1. A form of language without a matric structure is . . . . . . .     .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. poetry </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">2. Prose</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. literature</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4. painting </span><br>
+            </div></div>
+    
+    
+            <h5> 2. . . . . .   is literary work based on fact .  </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. prose poetry</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2. heroic prose </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"   valid="valid" onclick="correct.play()">
+                <span class="an">3. non-fictional prose</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4.fictional prose  </span><br>
+            </div>
+    
+        </div>
+        <h5> 3. Prose applies a . . . . .  grammatical structure .</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. special </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. difficult</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">3. normal </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. advanced </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 4.  Dealing with beautiful subject </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. comedy  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. fiction</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">3. persuasive    </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid= "valid" onclick="correct.play()">
+        <span class="an">4. aesthetic </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            Famous British author Charles John Huffam Dickens was born on February 7, 1812, in Portsmouth, a port city in southern England. He was the second of eight siblings. His father, John Dickens, was a marine writer, and he dreamed that the profession would make him rich. His mother, Elizabeth Barrow, rose to become a teacher and then a school principal. Despite his parents' best efforts, the family remained poor. 
+            Dickens' writing became so popular with readers that he began publishing his first novel, Oliver Twist, as episodes in a newspaper, telling the tale of an orphan living on the streets. The story was inspired by the feeling of Dickens, a poor child forced to make a living through his own wits. Oliver Twist readers have been eagerly awaiting the next monthly episode. In 1859 Dickens published A Tale of Two Cities, a historical novel set at the time of the French Revolution. In 
+
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h5> 5. Charles is a british . . . . .  </h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. poet</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. principal</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">3. author </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. teacher</span><br>
+            </div></div>
+    
+    
+            <h5> 6. How long did charles family live in Gatham ? </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. 3 years</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid"  onclick="correct.play()">
+                <span class="an">2. 4 years</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">3.5 years </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. 6 years </span><br>
+            </div>
+    
+        </div>
+        <h5> 7. What did Charles work after he droped out of school ?</h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. barber </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">2. farming </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. cook </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4.  boat painting</span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 8. What was Charles's first book name ?  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. oliver twist </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+        <span class="an">2. sketches by BOZ</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. A tale of two cities </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">4. Diken's life </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة السابعة ادبي النثر ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

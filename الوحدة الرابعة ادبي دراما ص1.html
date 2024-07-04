@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الوحدة الرابعة ادبي دراما ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+           
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي)
+ الوحدة الرابعة دراما  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            Drama is divided into comedy and tragedy. Only a small fraction of the work of five dramatists has survived to this day: the tragedians Aeschylus, Sophocles and Euripides; and the comedians Aristophanes and, from the late 4th century, Menander. Medieval drama, when it emerged hundreds of years after the original tragedies and comedies, was a new creation rather than a rebirth without being influenced by earlier drama. The Renaissance saw a huge revival in all types of art, including theatre. William Shakespeare, one of the world's most renowned playwrights, wrote and produced many plays that are still performed regularly even today 
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1.  . . . . . . emerged withbeing influenced by earlier drama .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">1.comedians </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid" >
+                <span class="an">2. medival drama </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">3. tragedians</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4. prose </span><br>
+            </div></div>
+    
+    
+            <h5> 2.  Someone who writes plays : . </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1. poet</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">2. singer </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+                <span class="an">3. dramatist</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4. narrator </span><br>
+            </div>
+        </div>
+
+
+        <h5> 3.   . . . . . . was one of the most known dramatists in the Middle Ages    .  </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">1.Sam shepard </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()" >
+            <span class="an">2. Durred Lahham</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">3. Nezar kappany </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">4. Shakespeare </span><br>
+        </div>
+    </div>
+    
+    
+    <h5> 4. Light and humorous drama  means : .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()">
+        <span class="an">1. tragedy </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">2. song</span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid= "valid" onclick="correct.play()">
+        <span class="an">3. comedy</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">4. romance</span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the  following text then decide if the sentences are true or false:</u></h2>
+        <p>
+            Contemporary drama shows the influence of all that has come before. It involves much experimentation with new forms and ideas. In the early part of the 20th  century, musical drama came to dominate stages in New York and England,  although each theatre season saw the release of straight dramatic plays as well. Many playwrights of the 1960s and 1970s - Sam Shepard in the United States, Tom Stoppard in England - built plays around language. In their plays, dialogue frequently cannot be read simply as an intellectual exchange of information. Many playwrights also mirrored society's frustration with a seemingly uncontrollable, self-destructive world.   
+
+        </p><hr>
+        
+                   <!--السؤال الاول-->
+        <h5> 5.  Romantic period began in the 20<sup>th</sup> century  .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">2. false</span><br>
+            </div>
+            <div class="answer">
+               <br>
+            </div></div>
+    
+    
+            <h5> 6.  In the beginning of the 20th  century, musical drama came to dominate stages in New York and England.</h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. false</span><br>
+            </div>
+          
+    
+        </div>
+        <h5> 7. Sam shepard built plays you can read easily. </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()" >
+            <span class="an">1. true</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">2. false </span><br>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+    <h5> 8. Drama was refreshed at the beginning of the 20<sup>th</sup> century . </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+        <span class="an">1. true </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">2. fale </span><br>
+    </div>
+    
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الرابعة ادبي دراما ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الوحدة االسادسة ادبي علمي  الامم المتحدة   ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+           
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي-علمي)
+ الوحدة السادسة الامم المتحدة  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            The United Nations was established by the Charter of the United Nations and Statute of the International Court of Justice. The Charter was signed on 26 June 1945  by the representatives of 50 countries including Syria; Poland  signed on 15 October 1945. There were 51 founding members in 1945. The United Nations (UN) officially came into existence on  October 24, 1945 after ratification of the Charter. The day is  now celebrated each year around the world as United Nations Day.At the beginning of the 21st  century, the UN and its programmes and affiliated agencies struggled to address humanitarian crises and civil wars, unprecedented refugee flows, the devastation caused by the spread of AIDS, global financial disruptions, international terrorism, and the disparities in wealth between the world’s richest and poorest peoples.
+
+
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1.  . . . . .  is the day of UN  .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">1. 28 June 1954 </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">2. 24 October 1945</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. Monday</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4. 2 March 1990</span><br>
+            </div></div>
+    
+    
+            <h5> 2. . . . . .  is one of the five permanent members of SC. </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. Jordan</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()" >
+                <span class="an">2.  German</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid" >
+                <span class="an">3. China</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. Canada</span><br>
+            </div>
+        </div>
+
+
+        <h5> 3. Non-permanent members elected for  . . . . . .   .  </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">1. 4 years </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">2. 3 years</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3. 2 years</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. 5 years</span><br>
+        </div>
+    </div>
+    
+    
+    <h5> 4. Syria signed on the charter on . . . . .   .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1.15 October 1945 </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+        <span class="an">2. 26 June 1945</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. 11 May 1966</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">4. 2 July 1960</span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the  following text then decide if the sentences are true or false:</u></h2>
+        <p>
+            UNICEF was created in 1946 and began with a definite mission of providing emergency food and healthcare to children in the countries that had been destroyed by World War II. In 1953, Its original name was   changed to the United Nation’s Children Fund to reflect its broader mission, but it retained the original acronym, after being officially adopted as a permanent branch of the UN in 1954.  UNICEF is working to create a world in which no child is ever bought or sold, stolen from a family or otherwise victimised. UNICEF believes that every child deserves to grow up in a loving family and it supports inter-country adoption when conducted ethically in accordance with prevailing law and best practices. At the same time, UNICEF works to support families in need so that no one ever feels forced by poverty or insecurity to give up a child. 
+
+        </p><hr>
+        
+                   <!--السؤال الاول-->
+        <h5> 5. NUICEF is working for world with dignity for all children  .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. false</span><br>
+            </div>
+            <div class="answer">
+               <br>
+            </div></div>
+    
+    
+            <h5> 6. UNICEF headquarters are in London .</h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">2. false</span><br>
+            </div>
+          
+    
+        </div>
+        <h5> 7.  UNICEF was created in 1946  . </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">1. true</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">2. false </span><br>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+    <h5> 8.  UNICEF is supported entirely by only governments. </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. true </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+        <span class="an">2. false </span><br>
+    </div>
+    
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة السادسة الامم المتحدة ادبي علمي ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

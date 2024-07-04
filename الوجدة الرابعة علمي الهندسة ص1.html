@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الوحدة الرابعة علمي الهندسة ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+           
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(علمي)
+     الوحدة الرابعة الهندسة 
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            During the sixth century AD, the Indian
+            engineers invented the cotton gin, and by
+            the ninth century AD they designed windpowered machines such as the windmill and
+            the wind pump. Later, the Arab engineers
+            designed the spinning wheel in the early eleventh century. This was essential to the
+            growth of the cotton industry, which was the core of The Early Industrial Revolution
+            in the 18th Century.Today, aeronautical engineering deals with
+            aircraft design; this field of engineering has
+            been growing day after day to allow humans
+            make their dreams come true to invade the
+            outer space by designing better spaceship.
+            Finally, with the advent of computer
+            technology in the 1990's, the first search
+            engine was built by the computer engineer
+            Alan Emtage. 
+
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1. Repairing things means : .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">1. maintenace </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. engineering</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. development</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4. production</span><br>
+            </div></div>
+    
+    
+            <h5> 2. Axis was invented in . . . . . . .  : </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. Egypt</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">2. Mesopotamia </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">3. German</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. Near East </span><br>
+            </div>
+        </div>
+
+
+        <h5> 3. Pyramid was found by . . . . . . . ..  </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">1.Imhotep </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">2. Gilgamish</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. Alexander</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. Thomas Savery</span><br>
+        </div>
+    </div>
+    
+    
+    <h5> 4. Cotton gin was invented by . . . . . . .  .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. Greece </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. china</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. British</span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1"  valid= "valid" onclick="correct.play()">
+        <span class="an">4. Indian</span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the  following text then decide if the sentences are true or false:</u></h2>
+        <p>
+            This field is concerned with studying
+the body from an engineering point of
+view, in order to design suitable artificial
+limbs, organs, or other medical devices.Medical technology engineering helps doctors define their tasks and facilitates their
+work more, so the medical device has become an essential assistant for the doctors
+in all steps, starting from diagnosis, to the end of the treatment course. The need
+for development in this field has made designing medical devices a great priority,
+and this in turn led to the intervention of electrical, mechanical computer engineers
+and others, whose knowledge does not depend on their specialties only, but rather,
+they must be familiar with all aspects of human body, from biology, anatomy and
+physiology. So that the medical devices designed are useful for the human body.
+
+        </p><hr>
+        
+                   <!--السؤال الاول-->
+        <h5> 5. Medical devices can be divided into diagnostic and therapatic .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. false</span><br>
+            </div>
+            <div class="answer">
+               <br>
+            </div></div>
+    
+    
+            <h5> 6. Medical engineers work only in chemical companies.</h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">2. false</span><br>
+            </div>
+          
+    
+        </div>
+        <h5> 7. medical engineering doesn't give any help to human. </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()" >
+            <span class="an">1. true</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">2. false </span><br>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+    <h5> 8. copmlex devices are easy to deal with. </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. true </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+        <span class="an">2. false </span><br>
+    </div>
+    
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الرابعة علمي الهندسة ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

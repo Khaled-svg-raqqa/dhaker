@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الوحدة الثامنة علمي حقائق عن الجسم البشري ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+           
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(علمي)
+     الوحدة الثامنة حقائق عن الجسم البشري 
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            The main organs of
+the human body are lungs,
+heart, kidney, liver and brain.
+These organs work together
+and are controlled by the
+brain. Each system such as
+digestive system, excretory
+system, circulatory system,
+endocrine system, nervous
+system or muscular system
+carries out a major function.
+All of them are controlled
+by the brain which gives
+us intelligence to use our
+physical and mental abilities.The body keeps on growing.
+The peak of physical growth
+is reached at about 18 to
+25 years of age. When we
+grow old, the skin becomes
+wrinkled and less elastic,
+the joints become inflexible,
+muscles loose, and bones
+become weak.
+Here are some tips for aging
+gracefully: be kind to your
+skin which is your largest
+organ. You should also keep
+your salt intake to a minimum to keep your blood pressure down. Also, getting enough
+sleep has been proved to lower the risk of heart disease and stroke.
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1.One of the main organs is . . . . . . .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1"  onclick="correct.play()" valid="valid">
+                <span class="an">1. heart </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. ear <legend></legend></span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. finger</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">4. hair</span><br>
+            </div></div>
+    
+    
+            <h5> 2. The main organs are controlled by . .. . . .  : </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. mouth</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">2. brain </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">3. eye</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">4. ear</span><br>
+            </div>
+        </div>
+
+
+        <h5> 3. We have more than . . . . . .  living cells .  </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+            <span class="an">1.50,000 </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">2. 100,000</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">3. 1000</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">4. 600</span><br>
+        </div>
+    </div>
+    
+    
+    <h5> 4. . . . . . . produce enzymes and hormones  .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">1. brain </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. nervous system</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()">
+        <span class="an">3. endocrine system</span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1"  valid= "valid" onclick="correct.play()">
+        <span class="an">4. glades</span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the  following text then decide if the sentences are true or false:</u></h2>
+        <p>
+            As long as your immune system is running smoothly,
+you don’t notice that it’s there. But if it stops working
+properly – because it’s weak or can't fight particularly
+aggressive germs – you get ill. Germs that your body
+has never encountered before are also likely to make
+you ill. Some germs will only make you ill the first
+time you come into contact with them. These include
+childhood diseases like chickenpox.The immune system can be activated by a lot of different things that the body doesn’t
+recognise as its own. These are called antigens. Examples of antigens include the proteins
+on the surfaces of bacteria, and viruses. When these antigens attach to special receptors
+on the immune cells (immune system cells), a whole series of processes are triggered in
+the body. Once the body has come into contact with a disease-causing germ for the first
+time, it usually stores information about the germ and how to fight it. Then, if it comes
+into contact with the germ again, it recognises the germ straight away and can start
+fighting it faster.
+
+        </p><hr>
+        
+                   <!--السؤال الاول-->
+        <h5> 5. Without the immune system we can't fight bacteria  .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">2. false</span><br>
+            </div>
+            <div class="answer">
+               <br>
+            </div></div>
+    
+    
+            <h5> 6. Immune system doesn't recognize harmful substances .</h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. true </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid" onclick="correct.play()">
+                <span class="an">2. false</span><br>
+            </div>
+          
+    
+        </div>
+        <h5> 7. Fungi is simple type of plants that grow on the surface. </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+            <span class="an">1. true</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="wrong.play()">
+            <span class="an">2. false </span><br>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+    <h5> 8. Immune system stores information about germs and how to fight them. </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" name="a1"  valid="valid" onclick="correct.play()">
+        <span class="an">1. true </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1" onclick="wrong.play()" >
+        <span class="an">2. false </span><br>
+    </div>
+    
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الثامنة علمي حقائق عن الجسم البشري ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>

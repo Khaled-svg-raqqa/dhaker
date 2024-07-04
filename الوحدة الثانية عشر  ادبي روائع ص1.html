@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الوحدة الثانيةعشر ادبي روائع ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الثانوي(ادبي)
+ الوحدة الثانيةعشر روائع  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            The Mona Liza is a painting by Leonardo da Vinci, one of the
+            artists of the Italian renaissance, born in 1452. It is the most
+            famous painting in the world. This painting is in the Louvre
+            Museum in Paris, where millions of people visit it annually.
+            The Mona Liza gained its greatest fame in the 20th century,
+            when the genius artist, Da Vinci, was highlighted.The idea of the Mona Liza dates back to 1503, when the Italian silk merchant,
+            Francisco Dell agreed with the artist, Da Vinci, to portray his wife, Liza Gioconda.
+            Leonardo finished it in 1519, when he took it with him to France at the invitation of
+            King Francois I, but he died before returning to Italy and delivering the painting to
+            Francisco. 
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h5> 1. The Mona liza is a painting by . . . . . . .</h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1" onclick="wrong.play()">
+                <span class="an">1. Mona liza </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1"   onclick="correct.play()" valid="valid">
+                <span class="an">2. Da Vinci </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"   onclick="wrong.play()">
+                <span class="an">3. shakespear</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4. Anderson</span><br>
+            </div></div>
+    
+    
+            <h5> 2. The  Mona Liza is in the . . . . .  Museum in Pasris .  </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer1">
+                <input type="radio" name="a1"  valid="valid"  onclick="correct.play()">
+                <span class="an">1.Louvre </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. national </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">3. London</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4. Da vinci </span><br>
+            </div>
+    
+        </div>
+        <h5> 3. The woman in the painting was . . . . . . .  </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">1. nurse </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"   onclick="wrong.play()">
+            <span class="an">2.doctor </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">3. teacher </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+            <span class="an">4. a merchant's wife  </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 4. 'Feels sorrow for someone's death' means .  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">1. scrutiny </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">2. merchant </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">3. portray </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid= "valid"  onclick="correct.play()">
+        <span class="an">4. mourning </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            Charles Dickens's A Tale of Two Cities, published
+in the late 18th century against the background
+of the French revolution. The novel tells the story
+of the French Doctor Manette, his 18-year-long
+imprisonment in the Bastille in Paris and his release to
+live in London with his daughter Lucie, whom he had
+never met, the story is set against the conditions that
+led up to the French Revolution.  Sacrifice means happiness for both Lucie and Darnay.
+Dickens tries in his novel to show that violence is rejected at any term by whoever,
+where vengeance is the bad means that spoils the relationships between people on
+earth. Instead, the story calls for love, rejecting hate and prejudice. The evident lesson
+set by Dickens is that humanity can live peacefully if they accept each another.
+            
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h5> 5. When was "A tale of two cities" puplished? . </h5>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+                <span class="an">1.18 <sup>th</sup> century</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">2. 1950 </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3.1900</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">4. 1980 </span><br>
+            </div></div>
+    
+    
+            <h5> 6. The state of being  in prison  means :     . </h5>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1.absent </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2. travel </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">3. student</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+                <span class="an">4.imprisonment </span><br>
+            </div>
+    
+        </div>
+        <h5> 7. The novel is about a man who is a . . . . .  . </h5>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">1. teacher </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+            <span class="an">2.French doctor  </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">3. writer</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" name="a1"  onclick="wrong.play()">
+            <span class="an">4. barber</span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 8. Who did write "A tale of two cities" </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()">
+        <span class="an">1. shakespear  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()" >
+        <span class="an">2.Antarah </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" name="a1" valid="valid"  onclick="correct.play()">
+        <span class="an">3. Charles Dickens </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" name="a1"  onclick="wrong.play()">
+        <span class="an">4. Enstein </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="الوحدة الثانية عشر  ادبي روائع ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>
