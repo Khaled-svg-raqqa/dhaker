@@ -1,107 +1,252 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ادبي+علمي</title>
+    <title>كتاب الطالب والأنشطة علمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            background-image: url(s.jpeg);
-            background-attachment: fixed;
-            background-size: 100% 100%;
-           
-            padding: 0;
-            margin: 0;
+        :root {
+
+
+            --primary-blue: #1e40af;
+            --primary-blue-hover: #1d4ed8;
+            --secondary-green: #059669;
+            --secondary-green-hover: #10b981;
+            --bg-overlay: rgba(15, 23, 42, 0.75);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --text-main: #0f172a;
         }
-      .d1{
-        width: 40%;
-        float: right;
-        font-size: xx-large;
-        text-align: center;
-        gap: 10px;
-        margin-right: 1px;
-        backdrop-filter: blur(8px);
-        border-radius: 10px;
 
-      }
-      .d2{
-        width: 40%;
-        float: left;
-        font-size:xx-large;
-        text-align: center;
-        gap: 10px;
-        backdrop-filter: blur(8px);
-        border-radius: 10px;
-      }
-      .b1{
-        background-color: rgb(33, 33, 156);
-        color: beige;
-        border-radius: 10px;
-      }
-      button{
-        border: none;
-        width: 100%;
-        background-color: green;
-        font-size:xx-large;
-        color: beige;
-        cursor: pointer;
-        border-radius: 10px;
-      }
-      a{
-        text-decoration-line: none;
-        color: aliceblue;
-      }
-      span{
-        width: 100%;
-        background-color: green;
-      }
 
-             
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            min-height: 100vh;
+            background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('s.jpeg');
+
+
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: var(--text-main);
+            padding: 2rem 1rem;
+        }
+
+
+        .header-title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+
+
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            align-items: start;
+        }
+
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .card-header {
+            background: linear-gradient(135deg, var(--primary-blue), #3b82f6);
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+
+
+        .card-subheader {
+
+
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #475569;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+
+        .card-subheader::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-blue);
+            border-radius: 2px;
+        }
+
+
+        .units-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+
+        .unit-link {
+            display: block;
+            background-color: var(--secondary-green);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 0.8rem 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+
+        .unit-link:hover {
+            background-color: var(--secondary-green-hover);
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+
+
+        /* تخصيص للبطاقة الثانية لإعطاء مظهر متناسق */
+        .activity-book .card-header {
+            background: linear-gradient(135deg, #0f766e, #14b8a6);
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+        }
+
+
+        .activity-book .card-subheader::after {
+            background-color: #0f766e;
+
+
+        }
+
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+            .header-title {
+                font-size: 1.75rem;
+            }
+            .card {
+                padding: 1rem;
+            }
+            .unit-link {
+                font-size: 1rem;
+                padding: 0.7rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="d1">
-        <div class="b1"> كتاب الطالب</div><hr color="black">
+
+
+    <h1 class="header-title">المناهج الدراسية - الفرع العلمي</h1>
+
+
+    <div class="container">
         
-          <div class="title"> الوحدات</div>
-          <div class="units"><a href="https://drive.google.com/file/d/1cyBAglrHSZGXqQZ_8brpwwxJq1AZDvi5/view?usp=sharing"> الوحدة الاولى</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1qiYlrW4sDP7PKHVqRlCWci_XhujsoOOs/view?usp=sharing"> الوحدة الثانية</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1YUZgbISYnfmo5RRkEGKVJE8BtzTyTRGa/view?usp=sharing"> الوحدة الثالثة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1SPa8ObvuI3WxmbLP6T1cXsLCXiQ5O4M-/view?usp=drive_link"> الوحدة الرابعة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1Logp9CjQFE83F21jlcKn3Rf8m2KVJSUc/view?usp=sharing"> الوحدة الخامسة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1ZwICZtyDsNYjpWO-JDD7TQQd_e1tPAzc/view?usp=sharing"> الوحدة السادسة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1Jpi69RkpF7q-Wokb9qe_92d-tuGkfAb3/view?usp=sharing"> الوحدة السابعة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1-O8rEFGmwJuKXxJPDVZ_PKU5opbUVNb9/view?usp=sharing"> الوحدة الثامنة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/19Rg_ZQgyMNFY48TvpYvWCodXf2vNT_jE/view?usp=sharing"> الوحدة التاسعه</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1gbWUIK_DNt0BvBqvfsqwtXq3ZCGQcqHl/view?usp=sharing"> الوحدة العاشرة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1RmrlI3wJwrSRqCGo39SuweSxFv5i7FuM/view?usp=sharing"> الوحدة الحادية عشر</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1EXVMJRUaHINpcYeFbbt1l7NAKR1zj3cs/view?usp=sharing"> الوحدة الثانية عشر</a></div>
+        <!-- كتاب الطالب -->
+        <div class="card student-book">
+            <div class="card-header">كتاب الطالب</div>
+            <div class="card-subheader">الوحدات الدراسية</div>
+            
+            <div class="units-list">
+                <a href="https://drive.google.com/file/d/1cyBAglrHSZGXqQZ_8brpwwxJq1AZDvi5/view?usp=sharing" target="_blank" class="unit-link">الوحدة الأولى</a>
+                <a href="https://drive.google.com/file/d/1qiYlrW4sDP7PKHVqRlCWci_XhujsoOOs/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثانية</a>
+                <a href="https://drive.google.com/file/d/1YUZgbISYnfmo5RRkEGKVJE8BtzTyTRGa/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثالثة</a>
+                <a href="https://drive.google.com/file/d/1SPa8ObvuI3WxmbLP6T1cXsLCXiQ5O4M-/view?usp=drive_link" target="_blank" class="unit-link">الوحدة الرابعة</a>
+                <a href="https://drive.google.com/file/d/1Logp9CjQFE83F21jlcKn3Rf8m2KVJSUc/view?usp=sharing" target="_blank" class="unit-link">الوحدة الخامسة</a>
+                <a href="https://drive.google.com/file/d/1ZwICZtyDsNYjpWO-JDD7TQQd_e1tPAzc/view?usp=sharing" target="_blank" class="unit-link">الوحدة السادسة</a>
+                <a href="https://drive.google.com/file/d/1Jpi69RkpF7q-Wokb9qe_92d-tuGkfAb3/view?usp=sharing" target="_blank" class="unit-link">الوحدة السابعة</a>
+                <a href="https://drive.google.com/file/d/1-O8rEFGmwJuKXxJPDVZ_PKU5opbUVNb9/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثامنة</a>
+                <a href="https://drive.google.com/file/d/19Rg_ZQgyMNFY48TvpYvWCodXf2vNT_jE/view?usp=sharing" target="_blank" class="unit-link">الوحدة التاسعة</a>
+                <a href="https://drive.google.com/file/d/1gbWUIK_DNt0BvBqvfsqwtXq3ZCGQcqHl/view?usp=sharing" target="_blank" class="unit-link">الوحدة العاشرة</a>
+
+
+                <a href="https://drive.google.com/file/d/1RmrlI3wJwrSRqCGo39SuweSxFv5i7FuM/view?usp=sharing" target="_blank" class="unit-link">الوحدة الحادية عشر</a>
+                <a href="https://drive.google.com/file/d/1EXVMJRUaHINpcYeFbbt1l7NAKR1zj3cs/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثانية عشر</a>
+            </div>
+        </div>
+
+
+        <!-- كتاب الأنشطة -->
+        <div class="card activity-book">
+            <div class="card-header">كتاب الأنشطة</div>
+            <div class="card-subheader">الوحدات الدراسية</div>
+            
+            <div class="units-list">
+
+
+                <a href="https://drive.google.com/file/d/1RLe50UjVK-kxqGs0L9A8rwD5wctL0PZ8/view?usp=sharing" target="_blank" class="unit-link">الوحدة الأولى</a>
+                <a href="https://drive.google.com/file/d/1xCCyCLc3QgYsd5hSC8DIB-bCGiSxs-PC/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثانية</a>
+                <a href="https://drive.google.com/file/d/1M0t_0uknVu9r4YwVbXSCmcC_HiN5-r9M/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثالثة</a>
+                <a href="https://drive.google.com/file/d/1DdAUWveUMzWdYYc-zDepMA4VUpl35FbZ/view?usp=sharing" target="_blank" class="unit-link">الوحدة الرابعة</a>
+                <a href="https://drive.google.com/file/d/1duRGNtioVXr8d4yaK7eqw3q3BwyeNyse/view?usp=sharing" target="_blank" class="unit-link">الوحدة الخامسة</a>
+                <a href="https://drive.google.com/file/d/1YyUJjWuEgTxg_ACdJ4HJIJzTB-vBYd_i/view?usp=sharing" target="_blank" class="unit-link">الوحدة السادسة</a>
+                <a href="https://drive.google.com/file/d/1G8qwhlbPusu8cwEXcdxVuesGpQ7Rmtw8/view?usp=sharing" target="_blank" class="unit-link">الوحدة السابعة</a>
+                <a href="https://drive.google.com/file/d/1lsHoD18TOkqITfbdobS1ueEOMUGUR3na/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثامنة</a>
+                <a href="https://drive.google.com/file/d/1wzuoTgjUqvEnuGYz3vUxlwlzcVy2s9iT/view?usp=sharing" target="_blank" class="unit-link">الوحدة التاسعة</a>
+                <a href="https://drive.google.com/file/d/190-u2fJuyPQjOUEqOtj5vqAjsGusTwKD/view?usp=sharing" target="_blank" class="unit-link">الوحدة العاشرة</a>
+                <a href="https://drive.google.com/file/d/1dZVkdgdyrTyXaNelGSEVUsrDpvs7cv6x/view?usp=sharing" target="_blank" class="unit-link">الوحدة الحادية عشر</a>
+                <a href="https://drive.google.com/file/d/11I1F8155KkJoYUEB1yCIlESJt2c1ONLp/view?usp=sharing" target="_blank" class="unit-link">الوحدة الثانية عشر</a>
+            </div>
+        </div>
+
 
     </div>
 
 
-    <div class="d2">
-        <div class="b1"> كتاب الانشطة</div><hr color="black">
-        
-          <div class="title"> الوحدات</div>
-          <div class="units"><a href="https://drive.google.com/file/d/1RLe50UjVK-kxqGs0L9A8rwD5wctL0PZ8/view?usp=sharing"> الوحدة الاولى</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1xCCyCLc3QgYsd5hSC8DIB-bCGiSxs-PC/view?usp=sharing"> الوحدة الثانية</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1M0t_0uknVu9r4YwVbXSCmcC_HiN5-r9M/view?usp=sharing"> الوحدة الثالثة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1DdAUWveUMzWdYYc-zDepMA4VUpl35FbZ/view?usp=sharing"> الوحدة الرابعة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1duRGNtioVXr8d4yaK7eqw3q3BwyeNyse/view?usp=sharing"> الوحدة الخامسة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1YyUJjWuEgTxg_ACdJ4HJIJzTB-vBYd_i/view?usp=sharing"> الوحدة السادسة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1G8qwhlbPusu8cwEXcdxVuesGpQ7Rmtw8/view?usp=sharing"> الوحدة السابعة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1lsHoD18TOkqITfbdobS1ueEOMUGUR3na/view?usp=sharing"> الوحدة الثامنة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1wzuoTgjUqvEnuGYz3vUxlwlzcVy2s9iT/view?usp=sharing"> الوحدة التاسعه</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/190-u2fJuyPQjOUEqOtj5vqAjsGusTwKD/view?usp=sharing"> الوحدة العاشرة</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/1dZVkdgdyrTyXaNelGSEVUsrDpvs7cv6x/view?usp=sharing"> الوحدة الحادية عشر</a></div>
-          <div class="units"><a href="https://drive.google.com/file/d/11I1F8155KkJoYUEB1yCIlESJt2c1ONLp/view?usp=sharing"> الوحدة الثانية عشر</a></div>
-
-    </div>
-
-    
 </body>
 </html>
+
+
+
