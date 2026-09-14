@@ -1,111 +1,264 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ادبي+علمي</title>
+    <title>أدبي + علمي</title>
     <style>
-        body{
+        /* إعادة ضبط الأساسيات */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-image: url(s.jpeg);
-            background-attachment: fixed;
-            background-size: 100% 100%;
-           
-            padding: 0;
-            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-      .d1{
-        width: 40%;
-        float: right;
-        font-size: xx-large;
-        text-align: center;
-        gap: 10px;
-        margin-right: 1px;
-        backdrop-filter: blur(8px);
-        border-radius: 10px;
 
-      }
-      .d2{
-        width: 40%;
-        float: left;
-        font-size:xx-large;
-        text-align: center;
-        gap: 10px;
-        backdrop-filter: blur(8px);
-        border-radius: 10px;
-      }
-      .b1{
-        background-color: rgb(33, 33, 156);
-        color: beige;
-        border-radius: 10px;
-      }
-      button{
-        border: none;
-        width: 100%;
-        background-color: green;
-        font-size:xx-large;
-        color: beige;
-        cursor: pointer;
-        border-radius: 10px;
-      }
-      a{
-        text-decoration-line: none;
-        color: aliceblue;
-      }
-      span{
-        width: 100%;
-        background-color: green;
-      }
 
-             
+        body {
+
+
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px 10px;
+            color: #333;
+        }
+
+
+        /* شريط الشعار العلوي */
+        .header-logo {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+
+        .header-logo img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+
+        .header-logo img:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* الحاوية الرئيسية للقسمين */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        /* كروت الأقسام (أدبي وعلمي) */
+        .section-card {
+            flex: 1 1 320px;
+            max-width: 500px;
+            background: #ffffff;
+
+
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        /* عناوين الأقسام */
+        .section-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 12px;
+
+
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(30, 60, 114, 0.2);
+        }
+
+
+        /* زر الكتاب المترجم */
+        .btn-main {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+
+            box-shadow: 0 4px 12px rgba(56, 239, 125, 0.25);
+        }
+
+
+        .btn-main:hover {
+            opacity: 0.95;
+            box-shadow: 0 6px 15px rgba(56, 239, 125, 0.4);
+        }
+
+
+        /* عنوان الامتحانات */
+        .title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eef2f5;
+        }
+
+
+        /* قائمة الوحدات */
+
+
+        .units-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .units a {
+            display: block;
+            background: #f8f9fa;
+            color: #333333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            transition: all 0.25s ease;
+        }
+
+
+        .units a:hover {
+            background: #1e3c72;
+
+
+            color: #ffffff;
+            border-color: #1e3c72;
+            padding-right: 20px;
+        }
+
+
+        /* تحسينات الشاشات الصغيرة (الهواتف) */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 8px;
+            }
+            .header-logo img {
+                max-width: 220px;
+            }
+            .section-card {
+                flex: 1 1 100%;
+                padding: 18px;
+            }
+            .section-header {
+                font-size: 1.5rem;
+            }
+            .btn-main {
+
+
+                font-size: 1.1rem;
+            }
+            .units a {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="d1">
-        <div class="b1"> ادبي</div><hr color="black">
-        <span class="bt1">
-            <a href="كتاب مترجم.html"><button>الكتاب المترجم</button></a><hr color="black">
-          </span>
-          <div class="title"> الامتحانات</div>
-          <div class="units"><a href="امتحان الوحدة الاولى كتاب الطالب بكالوريا ادبي علمي.html"> الوحدة الاولى</a></div>
-          <div class="units"><a href="الوحدة الثانية ادبي علمي  النجاح   ص1.html"> الوحدة الثانية</a></div>
-          <div class="units"><a href="الوحدة الثالثة ادبي الشعر ص1.html"> الوحدة الثالثة</a></div>
-          <div class="units"><a href="الوحدة الرابعة ادبي دراما ص1.html"> الوحدة الرابعة</a></div>
-          <div class="units"><a href="الوحدة الخامسة الحقوق المدنية ادبي علمي ص1.html"> الوحدة الخامسة</a></div>
-          <div class="units"><a href="الوحدة السادسة الامم المتحدة ادبي علمي ص1.html"> الوحدة السادسة</a></div>
-          <div class="units"><a href="الوحدة السابعة ادبي النثر ص1.html"> الوحدة السابعة</a></div>
-          <div class="units"><a href="الوحدة الثامنة المقالة  ادبي ص1.html"> الوحدة الثامنة</a></div>
-          <div class="units"><a href="الوحدة التاسعة المواطنة ادبي علمي ص1.html"> الوحدة التاسعه</a></div>
-          <div class="units"><a href="الوحدة العاشرة الصدمة الثقافية ادبي علمي ص1.html"> الوحدة العاشرة</a></div>
-          <div class="units"><a href="الوحدة الحادية عشر ادبي الملاحم ص1.html"> الوحدة الحادية عشر</a></div>
-          <div class="units"><a href="الوحدة الثانية عشر  ادبي روائع ص1.html"> الوحدة الثانية عشر</a></div>
+
+
+    <!-- الشعار في الأعلى -->
+    <!-- <div class="header-logo">
+        <img src="LOGO.png" alt="Logo">
+    </div> -->
+
+
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+        
+        <!-- قسم الأدبي -->
+        <div class="section-card">
+
+
+            <div class="section-header">أدبي</div>
+            <a href="كتاب مترجم.html" class="btn-main">الكتاب المترجم</a>
+            
+            <div class="title">الامتحانات</div>
+            <div class="units-list">
+                <div class="units"><a href="امتحان الوحدة الاولى كتاب الطالب بكالوريا ادبي علمي.html">الوحدة الأولى</a></div>
+                <div class="units"><a href="الوحدة الثانية ادبي علمي  النجاح   ص1.html">الوحدة الثانية</a></div>
+                <div class="units"><a href="الوحدة الثالثة ادبي الشعر ص1.html">الوحدة الثالثة</a></div>
+                <div class="units"><a href="الوحدة الرابعة ادبي دراما ص1.html">الوحدة الرابعة</a></div>
+                <div class="units"><a href="الوحدة الخامسة الحقوق المدنية ادبي علمي ص1.html">الوحدة الخامسة</a></div>
+                <div class="units"><a href="الوحدة السادسة الامم المتحدة ادبي علمي ص1.html">الوحدة السادسة</a></div>
+                <div class="units"><a href="الوحدة السابعة ادبي النثر ص1.html">الوحدة السابعة</a></div>
+                <div class="units"><a href="الوحدة الثامنة المقالة  ادبي ص1.html">الوحدة الثامنة</a></div>
+                <div class="units"><a href="الوحدة التاسعة المواطنة ادبي علمي ص1.html">الوحدة التاسعة</a></div>
+                <div class="units"><a href="الوحدة العاشرة الصدمة الثقافية ادبي علمي ص1.html">الوحدة العاشرة</a></div>
+                <div class="units"><a href="الوحدة الحادية عشر ادبي الملاحم ص1.html">الوحدة الحادية عشر</a></div>
+                <div class="units"><a href="الوحدة الثانية عشر  ادبي روائع ص1.html">الوحدة الثانية عشر</a></div>
+            </div>
+        </div>
+
+
+        <!-- قسم العلمي -->
+        <div class="section-card">
+            <div class="section-header">علمي</div>
+            <a href="كتاب مترجم علمي.html" class="btn-main">الكتاب المترجم</a>
+            
+            <div class="title">الامتحانات</div>
+            <div class="units-list">
+                <div class="units"><a href="امتحان الوحدة الاولى كتاب الطالب بكالوريا ادبي علمي.html">الوحدة الأولى</a></div>
+                <div class="units"><a href="الوحدة الثانية ادبي علمي  النجاح   ص1.html">الوحدة الثانية</a></div>
+                <div class="units"><a href="الوحدة الثالثة الدواء علمي ص1.html">الوحدة الثالثة</a></div>
+                <div class="units"><a href="الوجدة الرابعة علمي الهندسة ص1.html">الوحدة الرابعة</a></div>
+                <div class="units"><a href="الوحدة الخامسة الحقوق المدنية ادبي علمي ص1.html">الوحدة الخامسة</a></div>
+                <div class="units"><a href="الوحدة السادسة الامم المتحدة ادبي علمي ص1.html">الوحدة السادسة</a></div>
+                <div class="units"><a href="الوحدة السابعة علمي البكتريا ص1.html">الوحدة السابعة</a></div>
+                <div class="units"><a href="الوحدة الثامنة علمي حقائق عن الجسم البشري ص1.html">الوحدة الثامنة</a></div>
+                <div class="units"><a href="الوحدة التاسعة المواطنة ادبي علمي ص1.html">الوحدة التاسعة</a></div>
+                <div class="units"><a href="الوحدة العاشرة الصدمة الثقافية ادبي علمي 1.html">الوحدة العاشرة</a></div>
+                <div class="units"><a href="الوحدة الحادية عشر علمي الذكاء الاصطناعي ص1.html">الوحدة الحادية عشر</a></div>
+                <div class="units"><a href="الوحدة الثانية عشر علمي المعرفة الرقمية ص1.html">الوحدة الثانية عشر</a></div>
+            </div>
+        </div>
+
 
     </div>
 
 
-    <div class="d2">
-        <div class="b1"> علمي</div><hr color="black">
-        <span class="bt1">
-            <a href="كتاب مترجم علمي.html"><button>الكتاب المترجم</button></a><hr color="black">
-          </span>
-          <div class="title"> الامتحانات</div>
-          <div class="units"><a href="امتحان الوحدة الاولى كتاب الطالب بكالوريا ادبي علمي.html"> الوحدة الاولى</a></div>
-          <div class="units"><a href="الوحدة الثانية ادبي علمي  النجاح   ص1.html"> الوحدة الثانية</a></div>
-          <div class="units"><a href="الوحدة الثالثة الدواء علمي ص1.html"> الوحدة الثالثة</a></div>
-          <div class="units"><a href="الوجدة الرابعة علمي الهندسة ص1.html"> الوحدة الرابعة</a></div>
-          <div class="units"><a href="الوحدة الخامسة الحقوق المدنية ادبي علمي ص1.html"> الوحدة الخامسة</a></div>
-          <div class="units"><a href="الوحدة السادسة الامم المتحدة ادبي علمي ص1.html"> الوحدة السادسة</a></div>
-          <div class="units"><a href="الوحدة السابعة علمي البكتريا ص1.html"> الوحدة السابعة</a></div>
-          <div class="units"><a href="الوحدة الثامنة علمي حقائق عن الجسم البشري ص1.html"> الوحدة الثامنة</a></div>
-          <div class="units"><a href="الوحدة التاسعة المواطنة ادبي علمي ص1.html"> الوحدة التاسعه</a></div>
-          <div class="units"><a href="الوحدة العاشرة الصدمة الثقافية ادبي علمي ص1.html"> الوحدة العاشرة</a></div>
-          <div class="units"><a href="الوحدة الحادية عشر علمي الذكاء الاصطناعي ص1.html"> الوحدة الحادية عشر</a></div>
-          <div class="units"><a href="الوحدة الثانية عشر علمي المعرفة الرقمية ص1.html"> الوحدة الثانية عشر</a></div>
-
-    </div>
-
-    
 </body>
 </html>
+
+
+
