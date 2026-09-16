@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  تاسع الوحدة الثانية ص1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الاعدادي
+ الوحدة الثانية  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            What is ‘Light Initiative’?
+
+Light Initiative started with two people and now it includes
+
+more than 350 volunteers. They voluntarily record school and
+
+college books for the benefit of the visually impaired people.
+
+They started recording the books of the 9th and the 12th grades;
+
+they also record university books and references. Their aim is
+
+to meet the visually impaired people's actual needs whatever
+
+they are.
+
+How do they work?
+
+Usually, the visually impaired person who has the desire to study a curriculum or a reference,
+
+contacts the initiative administration and provides them with the books needed. Then, the
+
+book is divided into tasks for a number of volunteers to record them.
+
+Social Media
+
+They use a Facebook page and a YouTube channel. On the Facebook page they announce
+
+that they finished this book or this curriculum, and they use the YouTube channel to publish
+
+the recordings. These records are saved in mp3 format.
+
+Service Cost
+
+Their services are absolutely free; i.e. the volunteer is not paid, and it doesn’t cost the
+
+visually impaired person anything. Anyone with a network can have access to their records.
+
+Tools
+
+Volunteers need very simple things. They use mobiles for recording and laptops to do the
+
+montage. No professional tools are needed.
+
+What’s New?
+
+Light Initiative’s new project is turning the Syrian curriculum into Braille. This will help Syrian
+
+students who suffer from sight problems.
+
+Light Initiative’s Target
+
+Light Initiative is trying to bring some light into the visually impaired people’s live. 
+
+
+
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h3> 1.  What is the main goal of the Light Initiative?</h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1. To sell audiobooks to college students </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2.To train volunteers in professional sound editing</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">3.To meet the actual needs of visually impaired people by recording books</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4.To manufacture special mobile phones for students </span><br>
+            </div></div>
+    
+    
+            <h3> 2. How does the initiative divide the work among volunteers? </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.Each volunteer records an entire university curriculum alone </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">2.  A requested book is divided into smaller tasks for multiple volunteers to record  </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"   >
+                <span class="an">3. The visually impaired student records the book themselves</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4.The administration records everything using professional equipment </span><br>
+            </div>
+    
+        </div>
+        <h3> 3.Where does the initiative publish their recorded MP3 audio files?  . </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.On their official paid website  </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2.Via email attachments only </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3.On their YouTube channels </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">4. On television channels </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h3> 4. What simple tools do the volunteers use to create the recordings?   .   </h3>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1"valid= "valid" >
+        <span class="an">1. Mobiles for recording and laptops for montage </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2. Professional recording studios and soundboards </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">3. Desktop computers and radio transmitters</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.Specialized Braille printers only </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+On March 27, 2013, John Sweeney, a plumber from Ireland, started a Facebook page
+called Suspended Coffees. His message was simple: Buy a cup of coffee for a stranger,
+because an act of kindness can change a life and make a difference. Eight hours later, the
+page had attracted more than 20,000 likes.
+Suspended coffee is a tradition that comes from Naples, Italy, and dates back to the 20th
+century. When customers buy coffee, they also pay in advance for a cup to be given to
+somebody else; usually someone who otherwise couldn't afford it. This initiative was
+forgotten, but then it revived again in 2011. That's when "Suspended Coffee Day" started to
+be celebrated each December.
+You can buy it for anyone in need. It can be for the homeless person you pass by every
+day on the street, a stressed student in the middle of exams. It may be a well-dressed man
+whom you may not think from his appearance that he's in need but he may be in his third
+month of job hunting. It's not up to us to judge - if someone asks, then they're in need - no
+CV required.
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h3> 5. Where did the tradition of suspended coffee originate? </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. Naples, Italy </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">2.Ireland </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">3.London, UK</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">4. New York, USA  </span><br>
+            </div></div>
+    
+    
+            <h3> 6. What is a "suspended coffee"?  </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">1.A free cup of coffee provided by the restaurant owner </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"  >
+                <span class="an">2. A special type of coffee served during exams </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+                <span class="an">3. A cup of coffee paid for in advance for someone who needs it </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4. A discounted coffee sold on social media  </span><br>
+            </div>
+    
+        </div>
+        <h3> When is "Suspended Coffee Day" celebrated each year? </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.Every March </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. Every Octobe </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">3.Every January </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+            <span class="an">4. Every December </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> How many likes did John Sweeney's Facebook page attract in its first eight hours?</h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+        <span class="an">1.More than 20,000  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2.Exactly 200 </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">3.Less than 2,000 </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.More than 200,000  </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="تاسع الوحدة الثانية ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>
