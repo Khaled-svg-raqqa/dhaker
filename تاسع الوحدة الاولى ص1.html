@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان الوحدة الثالثة بكالورياادبي  الصفحة الاولى</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الاعدادي
+ الوحدة الاولى  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+            Hanan Al-Hroub was a poorly paid teacher in the West Bank. Then she won the $1 million
+            Global Teacher Prize. The committee praised Mrs. Al-Hroub’s “play and learn” method,
+            which she still employs.
+            Besides her clown outfit, Mrs. Al-Hroub uses balloons,
+            hula-hoops, toy cars and puppets to explain her lessons.
+            Her aim is to make the classroom a calm and fun place
+            where children can forget about the struggle of daily life,
+            and open their mindsزParents often refuse the focus on play. That soon changes, Mrs. Al-Hroub says, when they
+            realise that her methods improve behaviour – especially in troubled kids – and academic
+            results. She also sees it as her duty to build their characters. “No to violence” is a motto in
+            her classes.
+            Mrs. Al-Hroub plans to establish her own foundation and use some of her winnings to train
+            other teachers to follow her approach.
+            It is worth mentioning that Mrs. Al-Hroub's dream was to be a doctor but failing to do so did
+            not prevent her from being a special person who could make a difference.   
+
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h3> 1.  Poems are imagrative awarness of . . . . . </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1.  imagination </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2.language </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">3.experience</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4.thyme </span><br>
+            </div></div>
+    
+    
+            <h3> 2. poetry has been known as . . . . .  . </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.facts </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">2.  music of ideas  </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"   >
+                <span class="an">3. social position</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4.work </span><br>
+            </div>
+    
+        </div>
+        <h3> 3.The Epic of Gilgamesh dates back to . . . . . .   . </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.1.18<sup>th</sup> century A.C  </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2.20 <sup>th</sup> A.C </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3.18<sup>th</sup> B.C </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">4. 16<sup>th</sup> B.C </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h3> 4. Epic of Gilgamesh was discovered through Babylonian . . . . .    .   </h3>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid= "valid" >
+        <span class="an">1. tablet versions </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2. books </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">3. statues</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.images </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+            One day, an unemployed man went to apply for a job with Microsoft as a cleaner. The
+            manager said: "Let me have your e-mail address, so that I can send you a form to complete
+            and tell you when you can start." The man said that he had no computer or email address.
+            The manager: "Well, then, that means that you virtually don’t exist and therefore can’t be
+            employed."
+            The man looked at the last £10 in his wallet and thought of buying tomatoes in bulk. Within
+            less than 2 hours, he sold all the tomatoes at 100% profit. Repeating the process several
+            times that day, he ended up with almost £100 before going to sleep that night.Planning for the future of his wife and children, he decided to buy life insurance. An adviser
+            asked him for his e-mail address in order to send the final documents electronically. When
+            the man replied that he has no e-mail, the adviser felt astonished and said: "How did you
+            make such wealth without Internet and e-mail? Just imagine where you would-be now, if you
+            had been connected to the internet from the very start!"
+
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h3> 5. Sonnet form is known for work of  </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. Shakespeare </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">2.Dryden </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">3.Epic of Gilgamesh </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">4. herotic poetry  </span><br>
+            </div></div>
+    
+    
+            <h3> 6. A group of class of persons enjoying suprior intellectual   means :  </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">1.poets </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"  >
+                <span class="an">2. soldiers </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+                <span class="an">3. elite </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4. teachers  </span><br>
+            </div>
+    
+        </div>
+        <h3> <i>7. Who was the writer of The Rape Of The Lock? </i> </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.Blake </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. Dryden </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">3.Keats </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+            <span class="an">4. Alexander pope </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> <i>8. The period of Europian history at the end of The Middle Ages and the rise of the modern world . </i> </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+        <span class="an">1.Elizabethan reign  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2.Sumerian era </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">3.Renaissance </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.Romantic history  </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="تاسع الوحدة الاولى ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>
