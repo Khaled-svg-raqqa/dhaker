@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان تاسع الوحدة الخامسة</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الاعدادي
+ الوحدة الخامسة  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+A king and queen lived in a vast, beautiful kingdom with their only son, the prince, who was perpetually unhappy despite all their efforts. Doctors and professors failed to cheer him up until a wise man suggested that the prince wear the shirt of a truly happy man for a day and a night. The king's search yielded no results until he encountered a joyful fisherman singing on the shore, who claimed to be the happiest man in the world. However, when the king asked to borrow his shirt, the fisherman revealed that he didn't own a single shirt. The king then realized that wealth does not always bring happiness.
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h3> 1.  Why were the king and queen worried about their son? </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1.  He was critically ill. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">2.He wanted to leave the kingdom. </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">3.He was always unhappy and nothing made him happy.</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4.He refused to become king. </span><br>
+            </div></div>
+    
+    
+            <h3> 2. What solution did the wise man suggest to the king? </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.Sending the prince to travel to another kingdom. </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">2. Having the prince wear a truly happy man's shirt for a night and a day.  </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"   >
+                <span class="an">3. Giving all the kingdom's wealth to the prince</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4.Building a new garden for the prince. </span><br>
+            </div>
+    
+        </div>
+        <h3> 3.Where did the king finally find a truly happy man? </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.Inside the royal palace. </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2.In the market among the merchants.</span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3.On the shore, working as a fisherman.</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">4. On a farm among the peasants. </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h3> 4. Epic of Gilgamesh was discovered through Babylonian . . . . .    .   </h3>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid= "valid" >
+        <span class="an">1. tablet versions </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2. books </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">3. statues</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.images </span><br>
+    </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+Sam walked into a cake shop, after he'd finished his work, to buy his daughter a birthday
+cake. It was about four o'clock and the store usually closes at five. So he should make
+his mind quickly and decide what he should buy. Sam asked himself "Which one should I
+choose?" He began wandering in the shop watching the various kinds of cakes which were
+kept in the refrigerators around. The cakes looked very delicious and tasty so it was difficult
+for Sam to choose.
+Time was passing but in vain. Sam couldn't decide yet, when he heard the chef saying "Come
+on. Hurry up, please, we are about to close the store."
+"No, wait please, I should choose the most suitable and delicious cake." Sam saidsorrowfully.
+Sam's eyes kept moving from one refrigerator to another, but all of the options looked so
+good and he couldn’t make a decision yet.
+"Try to be quick Man, make up your mind, we have to close," the impatient chef said.
+Suddenly, the chef had enough and asked Sam to leave immediately. Sam walked out of the
+shop empty-handed feeling depressed and frustrated. He wanted them all, but ended up
+with nothing because he couldn’t choose any.
+Think of what happened to Sam. It's just that we’re all Sam and the world is that cake shop.
+We have extremely large numbers of options available to us, but if we don’t make a decision
+about our career, education, relationships, investments, or other important issues, we end
+up empty-handed.
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h3> 5. Why did Sam go to the cake shop?  </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">1. To buy a birthday cake for his daughter. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">2.To meet his friend, the chef. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">3.To apply for a job after finishing his work. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">4. To learn how to bake delicious cakes.  </span><br>
+            </div></div>
+    
+    
+            <h3> 6. Why was it difficult for Sam to choose a cake?  </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">1.The cakes were too expensive for him </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+                <span class="an">2. All the cakes looked very delicious, and he couldn't decide. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"  >
+                <span class="an">3. Most of the refrigerators were empty. </span><br>
+            </div>
+            
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4. The chef refused to show him the options.  </span><br>
+            </div>
+    
+        </div>
+        <h3> 7. What happened when Sam took too long to make up his mind?</h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.he chef chose the best cake for him. </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. The chef gave him a discount. </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+            <span class="an">3. The chef had enough and asked Sam to leave immediately. </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">4.Sam bought all the cakes in the shop </span><br>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+    <h5> 8. What is the main lesson or moral of the story?  </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">1.Cake shops should stay open later in the evening. </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">2.Having too many options always makes people happy </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">3.It is better to rely on others to make decisions for us  </span><br>
+    </div>
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+        <span class="an">4.If we fail to make decisions when faced with many choices, we end up empty-handed.  </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="‏‏تاسع الوحدة الخامسة ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>
