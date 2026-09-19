@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> امتحان تاسع الوحدة السابعة</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            z-index: 1;
+            max-width: 99%;
+            
+            padding: 5px;
+           
+
+        }
+        .d1 {
+            width: 50%;
+            border-top: 1px solid black;
+            
+
+           
+        }
+        .d2{
+            width: 49%;
+            border: 1px solid black;
+        }
+        pre{
+            font-size: 20px;
+        }
+        body{
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+        }  
+        h2{
+            border-bottom: 2px dotted black;
+            width: fit-content;
+            margin-left: 7px;
+        }
+        h3{
+            margin-left: 7px;
+        }
+        .qa1-box{
+            margin-left: 9px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+
+        }
+        .an{
+            width: 100px;
+            cursor: pointer;
+        }
+        
+        
+        .answer{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer1{
+            position: relative;
+            margin: 5px;
+            margin-left: 4px;
+        }
+        .answer1:hover span{
+            border: 1px solid black;
+            background-color: #bcccc7;
+            border-radius: 7px;
+
+        }
+        .answer1 span{
+            display: block;
+            padding: 8px 15px;
+            
+            border-radius: 7px;
+           transition: all 0.3s ease-out;
+        }
+        .answer1 input{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            cursor: pointer;
+        
+            
+        
+        }
+        .answer input:checked+ span{
+            background-color: red;
+        }
+        .answer1 input[valid]:checked+ span{
+            background-color: green;
+            color: #fff;
+        }
+        .head{
+            height: 70px ;
+            width: 100%;
+            text-align: center;
+           font-size: 35 px;
+           padding-top: 15px;
+           font-weight: bolder;
+           padding-bottom: 10px;
+        }
+        .a{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+    <script>
+        var wrong = new Audio();
+        wrong . src="wrong.mp3";
+        var correct = new Audio();
+       correct . src ="correct.mp3";
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div class="head">
+        <pre>امتحان شهادة الثالث الاعدادي
+ الوحدة السابعة  
+        </pre>
+       
+    </div>
+    <div class="main">
+    <div class="d1"> 
+        <h2><u>I-read the article and answer the question:</u></h2>
+        <p>
+The human brain naturally retains negative memories more easily than positive ones due to an evolutionary focus on survival threats. While happiness is partly determined by unchangeable factors like genetics and life circumstances, it is significantly influenced by personal choices. Rather than seeking happiness in wealth, fame, or material possessions, research indicates that cultivating habits such as building high-quality, trusting relationships and actively caring for the well-being of others leads to true happiness.
+        </p>
+        
+        <h2><u>--:choose the correct answer :</u></h2>            <!--السؤال الاول-->
+        <h3> 1. Why does the human brain remember negative experiences more easily than positive ones? </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()">
+                <span class="an">1.  Positive events require more cognitive effort to process </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">2.Dangerous threats historically had an immediate impact on survival.</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"  onclick="wrong.play()" >
+                <span class="an">3.The brain lacks the capacity to store pleasant memories. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" name="a1"    onclick="wrong.play()">
+                <span class="an">4.Negative experiences are less frequent than positive ones </span><br>
+            </div></div>
+    
+    
+            <h3> 2. Which of the following factors influencing happiness is within our control according to the text? </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.Genetic makeup </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"   >
+                <span class="an">2. Early life circumstances</span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">3.Innate personality traits </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid" >
+                <span class="an">4.  The personal choices we make </span><br>
+            </div>
+    
+        </div>
+        <h3> 3.What aspect of relationships is most important for bringing happiness? </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.The total number of friends a person has  </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2.The financial status of the friends </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+            <span class="an">3.The quality of the relationships and mutual trust</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">4. How long the relationships have lasted </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h3> 4. According to psychologists, which habit contributes positively to a person's happiness?  </h3>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">1. Chasing fame and material power </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. Focusing solely on personal career achievements</span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1">
+            <span class="an">3.Avoiding emotional closeness with family and friends </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid= "valid" >
+            <span class="an">4. Caring for the well-being of others through actions like volunteering </span><br>
+        </div>
+    
+    
+    </div></div>
+    <div class="d2"> 
+        <h2><u>read the article and answer the question:</u></h2>
+        <p>
+Frane Selak was a Croatian music teacher who survived a series of incredible near-death experiences between 1962 and 1996, including train, plane, and bus crashes, as well as car explosions. Despite facing deadly accidents that killed many around him, he survived each time with minor injuries. In 2003, he won the lottery, bought a luxury home, and later sold it to live a humble, happy life with his fifth wife.
+        </p>
+        
+        <h2><u> --:choose the correct answer</u></h2>            <!--السؤال الاول-->
+        <h3> 5. How did Selak survive the 1963 plane crash? </h3>                  <!--الجملة الاولى-->
+        <div class="qa1-box">
+          
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">1.He used a parachute. </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">2.He stayed inside the plane.</span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" name="a1" onclick="correct.play()" valid="valid">
+                <span class="an">3. He landed safely in a haystack </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">4. He landed in a river.  </span><br>
+            </div></div>
+    
+    
+            <h3> 6. In what year did Selak win the Croatian lottery?  </h3>         <!--الجملة الثانية-->
+            <div class="qa1-box">
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1" >
+                <span class="an">1.1962 </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1"  >
+                <span class="an">2. 1996 </span><br>
+            </div>
+            <div class="answer1">
+                <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+                <span class="an">3. 2003 </span><br>
+            </div>
+            <div class="answer">
+                <input type="radio" onclick="wrong.play()" name="a1">
+                <span class="an">4. 2010  </span><br>
+            </div>
+    
+        </div>
+        <h3> 7. What caused Selak's car disaster on the mountain road in 1996? </h3>         <!--الجملة الثالثة-->
+        <div class="qa1-box">
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">1.A brake failure </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1"  >
+            <span class="an">2. A fuel tank explosion </span><br>
+        </div>
+        <div class="answer">
+            <input type="radio" onclick="wrong.play()" name="a1" >
+            <span class="an">3.Slippery ice </span><br>
+        </div>
+        <div class="answer1">
+            <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+            <span class="an">4. An oncoming truck </span><br>
+        </div>
+    
+    
+    </div>
+    
+    
+    <h5> 8.  What did Selak do with his lottery earnings in 2010? </h5>        <!--الجملة الرابعة-->
+    <div class="qa1-box">
+    <div class="answer1">
+        <input type="radio" onclick="correct.play()" name="a1" valid="valid">
+        <span class="an">1.He sold his luxury home to live humbly.  </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1"  >
+        <span class="an">2.He bought another car</span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">3.He moved abroad. </span><br>
+    </div>
+    <div class="answer">
+        <input type="radio" onclick="wrong.play()" name="a1">
+        <span class="an">4.He invested in a business. </span><br>
+    </div>
+    
+    
+    </div>
+</div>
+<div class="a"><a href="‏‏تاسع الوحدة السابعة ص2.html">الصفحة الثانية</a></div>
+</div>
+
+<audio  id="correct" src="correct.mp3"></audio>
+<audio  id="wrong" src="wrong.mp3"></audio>
+
+    
+</body>
+</html>
